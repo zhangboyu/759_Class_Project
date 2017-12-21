@@ -4,7 +4,7 @@ int main(int argc, char const *argv[]) {
     using namespace std;
     // parse the input arguments
     if (argc < 4) {
-        std::cout << "Usage: " << argv[0] << " DIM(2/3) NUM_OBJECTS SPACE_SCALING [TEST_FLAG]" << '\n';
+        std::cout << "Usage: " << argv[0] << " DIM(2/3) NUM_OBJECTS SPACE_SCALING" << '\n';
         return -1;
     }
     unsigned int current_dim = atoi(argv[1]);
@@ -13,10 +13,10 @@ int main(int argc, char const *argv[]) {
     if (space_scaling > 1) {
         space_scaling = 1;
     }
-    unsigned int  test_flag = 0;
-    if (argc >= 5) {
-        test_flag = atoi(argv[4]);
-    }
+    // unsigned int  test_flag = 0;
+    // if (argc >= 5) {
+    //     test_flag = atoi(argv[4]);
+    // }
 
     // setup the memorys
     uint32_t available_obj_model = 1;
