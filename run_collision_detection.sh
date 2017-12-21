@@ -8,7 +8,7 @@
 #SBATCH --gres=gpu:gtx1080:1
 
 uname -n
-for j in 0.1 0.5 0.7
+for j in 0.1 0.4 0.7
 do
     for i in {1..16}
     do
