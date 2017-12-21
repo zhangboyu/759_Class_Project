@@ -25,8 +25,8 @@ debug : $(EXEC)
 all : collision_detection
 
 collision_detection: main.cu collision_gpu_broad.cu collision_gpu_narrow.cu collision_cpu.cu
-	# module load cuda;nvcc -o collision_detection $(CXXSTD) $(GENCODE_FLAGS) $(OPT) main.cu collision_gpu_broad.cu collision_gpu_narrow.cu collision_cpu.cu -ccbin $(BIN)
-	nvcc -o collision_detection $(CXXSTD) $(GENCODE_FLAGS) $(OPT) main.cu collision_gpu_broad.cu collision_gpu_narrow.cu collision_cpu.cu
+	module load cuda;nvcc -o collision_detection $(CXXSTD) $(GENCODE_FLAGS) $(OPT) main.cu collision_gpu_broad.cu collision_gpu_narrow.cu collision_cpu.cu -ccbin $(BIN)
+	# nvcc -o collision_detection $(CXXSTD) $(GENCODE_FLAGS) $(OPT) main.cu collision_gpu_broad.cu collision_gpu_narrow.cu collision_cpu.cu
 
 .PHONY: clean
 clean:
