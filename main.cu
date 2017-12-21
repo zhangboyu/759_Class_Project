@@ -10,8 +10,8 @@ int main(int argc, char const *argv[]) {
     unsigned int current_dim = atoi(argv[1]);
     unsigned long num_objects = atoi(argv[2]);
     double space_scaling = atof(argv[3]);
-    if (space_scaling > 1) {
-        space_scaling = 1;
+    if (space_scaling > 0.7) {
+        space_scaling = 0.7;
     }
     // unsigned int  test_flag = 0;
     // if (argc >= 5) {

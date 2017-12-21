@@ -9,8 +9,10 @@ How to build: Just type "make". The program itself is named as "collision_detect
 
 How to use: three ways:
 
-1). On a machine with GPU card, type "./collision_detection DIM(2/3) OBJ_NUMBER SPACE_SCALING_FACTOR".
+1). On a machine with GPU card, type "./collision_detection DIM(2/3) OBJ_NUMBER SPACE_SCALING_FACTOR". (SPACE_SCALING_FACTOR should not be larger than 0.7)
 
-2). On a machine with GPU card, type "./run_collision_detection.sh DIM(2/3) OBJ_NUMBER SPACE_SCALING_FACTOR".
+2). On a machine with GPU card, type "./run_collision_detection.sh" to run the program with some predefined arguments.
 
-3). On Euler, type "sbatch run_collision_detection.sh DIM(2/3) OBJ_NUMBER SPACE_SCALING_FACTOR".
+3). On Euler, type "sbatch run_collision_detection.sh" to run the program with some predefined arguments.
+
+After the program finish, a file named "collision_pairs.txt" will be generated, which contains the index of collide object pairs.
