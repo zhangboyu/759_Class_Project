@@ -3,7 +3,9 @@ This is our 759 final project repo.
 
 Team member: Boyu Zhang, Ying Li
 
-Note: This code requires compute capability 6.0 devices.
+Note: 
+1). This code requires compute capability 6.0 devices.
+2). Currently only works under 3D dimension, because we only have several 3D objects to load and test but not 2D.
 
 How to build: Just type "make". The program itself is named as "collision_detection".
 
